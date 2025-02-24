@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/oapi-codegen/oapi-codegen/HEAD/configuration-schema.json
+package: api
+output: api.gen.go
+generate:
+  echo-server: true
+  models: true
+  strict-server: true  # より厳密なサーバー実装を生成
+compatibility:
+  always-prefix-enum-values: true  # 列挙型の値にプレフィックスを付ける
